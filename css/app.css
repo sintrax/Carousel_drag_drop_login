@@ -1,0 +1,155 @@
+.grey-background {
+  background-color: grey;
+
+}
+.grey-background a{
+  color: white;
+}
+input.ng-invalid.ng-dirty.form-validation {
+  background-color: red;
+}
+input.ng-valid.ng-dirty.form-validation {
+  background-color: greenyellow;
+}
+.image-container img {
+    width: 100%;
+    height: 300px;
+}
+.navbar {
+   border: none!important;
+}
+body {
+     background-color: #eeeeee!important;
+     font-family: "News Cycle","Arial Narrow Bold",sans-serif!important;
+}
+.btn3 {
+    color: darkorange!important;
+    width: 65px;
+}
+.pull-right .edit {
+     margin-right: 15px;
+}
+.navbar-header:hover {
+    color: blue!important;
+}
+.nav a {
+    text-transform: uppercase;    
+}
+ul .nav-tabs li {
+    margin-right: 2px!important;
+}
+.navbar-inverse {
+    background-color: #c9252b;
+}
+.navbar-header a .navbar-brand {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.radio {
+    float: left;
+        
+}
+.radio2{
+    margin-left: 15px;
+}
+.clearfix {
+    margin-top: 100px!important;
+}
+.image-container {
+    margin-top: 40px;
+}
+.navbar-header a:hover {
+    color:white!important;
+    text-shadow: 1px 1px 1px white;
+}
+.top{
+        margin-top: 140px;
+}
+.list-top {
+    margin-top: 100px;
+}
+/* home-carousel css */
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 600px;
+}
+.container {
+  margin-left: 90px;
+}
+#slides_control {
+  position:absolute;
+  width: 600px;
+  left:50%;
+  top:20px;
+  margin-left:-300px;
+}
+.carousel {
+    margin-top: 140px;
+}
+/*list css*/
+.vthumbnail[jqyoui-droppable] {
+    border: 1px solid dimgrey; 
+}
+.vthumbnail {
+    height: 50px;
+    width: 360px;
+    text-align: center;
+    padding-top: 0px;
+    cursor: pointer;
+    background: rgb(182, 173, 123);
+    position: relative;
+    -webkit-transition: none;
+    transition: none;
+    float: none !important;
+}
+.vthumbnail.ng-leave {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    opacity: 1;
+}
+.vthumbnail.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+.vthumbnail.ng-enter {
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+.vthumbnail.ng-enter[data-direction="left"] {
+    top: -76px;
+}
+.vthumbnail.ng-enter[data-direction="right"] {
+    top: 76px;
+}
+.vthumbnail.ng-enter.ng-enter-active {
+    top: 0px;
+}
+.ng-binding {
+    color: white;
+    bottom: 8px!important;
+    position: relative;
+}
+.thumbnail {
+    background-color: #c9252b!important;
+}
+h1 {
+    text-align: center;
+    margin-top: 110px!important;
+}
+.bord {
+    margin: 0 auto;
+    width: 30%;
+}
+.container-fluid {
+    margin-top: 70px;
+}
+.container{
+    margin-left: 98px;
+}
+footer small {
+    color:red!important;
+}
+
+

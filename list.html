@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="stangaOne1">
+  <head lang="en">
+     <meta charset="utf-8">
+     <title>StangaOne1</title>
+     <!--css-->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/app.css">
+     <!--scripts-->
+     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.min.js"></script>
+     <script src="lib/angular/angular-dragdrop.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.js"></script>
+     <script src="js/controllers/ListCtrl.js"></script>
+  </head>
+  <body>
+      <!--Nav-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand first">Home</a>
+                </div>
+                <div class="navbar-header">
+                    <a href="list.html" class="navbar-brand">List</a>
+                </div>
+                <div class="navbar-header">
+                    <a href="account.html" class="navbar-brand">Account</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 list-top">  
+                <h1>Draggable list of plain items:</h1><br>
+                    <div ng-controller="listCtrl">
+                        <div class='contentWrapper ng-cloak bord'>
+                            <div class='content'>
+                                <div class="row-fluid">
+                                    <ul class="thumbnails">
+                                        <li class="thumbnail vthumbnail" ng-repeat="item in list1" data-drop="true" data-drag="true" ng-model="list1" jqyoui-droppable="{index: {{$index}}}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-direction="{{item.jqyouiDirection}}">
+                                            <h2>{{item.title}}</h2>
+                                        </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>        
+  </body>
+</html>

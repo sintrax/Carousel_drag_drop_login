@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 list-top">  
+            <h1>Draggable list of plain items:</h1><br>
+                <div ng-controller="listCtrl">
+                    <div class='contentWrapper ng-cloak bord'>
+                        <div class='content'>
+                            <div class="row-fluid">
+                                <ul class="thumbnails">
+                                    <li class="thumbnail vthumbnail" ng-repeat="item in list1" data-drop="true" data-drag="true" ng-model="list1" jqyoui-droppable="{index: {{$index}}}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-direction="{{item.jqyouiDirection}}">
+                                        <h2>{{item.title}}</h2>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>        

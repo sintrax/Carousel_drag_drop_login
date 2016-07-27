@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="stangaOne1">
+<head>
+    <meta charset="utf-8" />
+    <title>StangaOne1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+       <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">Home</a>
+                </div>
+                <div class="navbar-header">
+                    <a href="list.html" class="navbar-brand">List</a>
+                </div>
+                <div class="navbar-header">
+                    <a href="account.html" class="navbar-brand">Account</a>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="col-sm-8 col-sm-offset-2 top">
+                    <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                    <div ng-view></div>
+                </div>
+            </div>
+        </div>
+    
+    <!--scripts-->
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+    <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+    <script src="js/controllers/AccountCtrl.js"></script>
+    <script src="app-services/authentication.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+
+    <!-- Real user service that uses an api -->
+    <!-- <script src="app-services/user.service.js"></script> -->
+
+    <!-- Fake user service for demo that uses local storage -->
+    <script src="app-services/user.service.local-storage.js"></script>
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>
+    <script src="register/register.controller.js"></script>
+</body>
+</html>
